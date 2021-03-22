@@ -6,12 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class PluginCollect {
-    public void collect(){
+
+    public static void main(String[] args) {
         Categories categories;
         SampleService service = new SampleService();
 
         try {
-            categories = service.unmarshall("");
+            categories = service.unmarshall("based/categories.xml");
             service.marshall(categories, "");
         } catch (JAXBException | FileNotFoundException e) {
             e.printStackTrace();
