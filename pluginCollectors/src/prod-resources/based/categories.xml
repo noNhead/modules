@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<categories>
+    <category title="title">
+        <subcategory title="title2">
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>aa111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000000</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ab111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000001</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+        <subcategory title="title3">
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ab111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000001</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+        <subcategory>
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ac111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000000</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+    </category>
+    <category title="title">
+        <subcategory title="title2">
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>aa111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000000</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ab111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000001</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+        <subcategory title="title3">
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ab111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000001</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+        <subcategory>
+            <product>
+                <manufacturer>manufacturer</manufacturer>
+                <model>ac111</model>
+                <dateOfManufacture>15-03-2021</dateOfManufacture>
+                <color>#000000</color>
+                <price>10000</price>
+                <quantityInStock>10</quantityInStock>
+            </product>
+        </subcategory>
+    </category>
+</categories>

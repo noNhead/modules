@@ -12,17 +12,18 @@ public class PluginCollect {
         SampleService service = new SampleService();
 
         try {
-            categories = service.unmarshall("based/categories.xml");
-            service.marshall(categories, "");
+            categories = service.unmarshall(PluginCollect.class.getResource("based/categories.xml").getPath());
+            service.marshall(categories, "pluginCollectors/src/generated/new-categories.xml");
         } catch (JAXBException | FileNotFoundException e) {
             e.printStackTrace();
         }
 
         try {
-            categories = service.JsonToCategories("");
-            service.CategoriesToJson(categories, "");
+            categories = service.JsonToCategories(PluginCollect.class.getResource("based/categories.json").getPath());
+            service.CategoriesToJson(categories, "pluginCollectors/src/generated/new-categories.json");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
