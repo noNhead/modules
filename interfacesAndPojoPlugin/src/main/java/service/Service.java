@@ -14,11 +14,11 @@ public interface Service {
 
     Categories unmarshall(String path) throws JAXBException, FileNotFoundException;
 
-    void CategoriesToJson(Categories categories, String path) throws IOException;
+    void categoriesToJson(Categories categories, String path) throws IOException;
 
-    Categories JsonToCategories(String path) throws IOException;
+    Categories jsonToCategories(String path) throws IOException;
 
     ObjectMapper objectMapperConfigure(ObjectMapper objectMapper);
 
-    Categories staxReader() throws FileNotFoundException, XMLStreamException;
+    Boolean staxReader(String path) throws FileNotFoundException, XMLStreamException;
 }

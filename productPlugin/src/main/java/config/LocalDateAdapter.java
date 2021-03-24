@@ -7,7 +7,8 @@ import java.time.format.DateTimeFormatter;
 public class LocalDateAdapter extends XmlAdapter<String, LocalDate> {
     @Override
     public LocalDate unmarshal(String s) {
-        return LocalDate.parse(s);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        return LocalDate.parse(s, dtf);
     }
 
     @Override

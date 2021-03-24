@@ -32,13 +32,13 @@ public class SampleService implements Service {
     }
 
     @Override
-    public void CategoriesToJson(Categories categories, String path) throws IOException {
+    public void categoriesToJson(Categories categories, String path) throws IOException {
         ObjectMapper objectMapper = objectMapperConfigure(new ObjectMapper());
         objectMapper.writeValue(new File(path), categories);
     }
 
     @Override
-    public Categories JsonToCategories(String path) throws IOException {
+    public Categories jsonToCategories(String path) throws IOException {
         ObjectMapper objectMapper = objectMapperConfigure(new ObjectMapper());
         return objectMapper.readValue(new File(path), Categories.class);
     }
@@ -52,19 +52,19 @@ public class SampleService implements Service {
     }
 
     @Override
-    public Categories staxReader() throws FileNotFoundException, XMLStreamException {
+    public Boolean staxReader(String path) throws FileNotFoundException, XMLStreamException {
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
-        XMLEventReader reader = xmlInputFactory.createXMLEventReader(new FileInputStream("categories.xml"));
+        XMLEventReader reader = xmlInputFactory.createXMLEventReader(new FileInputStream(path));
 
         while (reader.hasNext()){
             XMLEvent nextEvent = reader.nextEvent();
             if (nextEvent.isStartElement()) {
                 StartElement startElement = nextEvent.asStartElement();
                 if ("category".equals(startElement.getName().getLocalPart())) {
-                    return null;
+                    return true;
                 }
             }
         }
-        return null;
+        return false;
     }
 }

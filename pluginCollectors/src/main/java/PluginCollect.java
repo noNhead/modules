@@ -19,8 +19,8 @@ public class PluginCollect {
         }
 
         try {
-            categories = service.JsonToCategories(PluginCollect.class.getResource("based/categories.json").getPath());
-            service.CategoriesToJson(categories, "pluginCollectors/src/generated/new-categories.json");
+            categories = service.jsonToCategories(PluginCollect.class.getResource("based/categories.json").getPath());
+            service.categoriesToJson(categories, "pluginCollectors/src/generated/new-categories.json");
         } catch (IOException e) {
             e.printStackTrace();
         }
